@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+button#copy{
+    position: absolute;
+    border:none;
+    background:none;
+    border-radius: 3px;
+    color:white;
+    text-decoration: none;
+    bottom:15px;
+    right:20px;
+}
 div.center {
     border-radius: 1em;
     padding: 1em;
@@ -14,7 +24,7 @@ div.center border {
 }
 div.tomate {
   font-family: 'Anonymous Pro', monospace;
-  color:rgb(255, 255, 83);
+  color:#ffffff;
   border-radius: 1em;
   padding: 1em;
   position: absolute;
@@ -25,17 +35,21 @@ div.tomate {
 }
 .border{
     display: absolute;
+    /*border-top-left-radius: 0px;*/
     border: 3px solid black;
     background-color: tomato;
-    height: 400px;
     width: 400px;
+    height: 400px;
     margin:5px;
 }
 input{
-    border-radius: 2px;
+    position: absolute;
+    border-radius: 4px;
     width: 40px;
     text-decoration: none;
     text-align: center;
+    border:none;
+    border-bottom: 1px solid black;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -43,30 +57,27 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 input.tl{
-    position: absolute;
     top:21px;
     left:-35px;
-    border:none;
-    border-bottom: 1px solid black;
 }
 input.tr{
-    position: absolute;
     top: 21px;
     right:-35px;
-    border:none;
-    border-bottom: 1px solid black;
 }
 input.bl{
-    position: absolute;
     bottom: 21px;
     left:-35px;
-    border:none;
-    border-bottom: 1px solid black;
 }
 input.br{
-    position: absolute;
     bottom:21px;
     right:-35px;
-    border:none;
-    border-bottom: 1px solid black;
 }
+input.w{
+    bottom:0px;
+    right:51%;
+}
+input.h{
+    bottom:0px;
+    left:51%;
+}
+
